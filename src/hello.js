@@ -7,8 +7,15 @@ import React, { Component } from 'react';
 //  }
 //}
 
-const Hello = (props) => {
-    return <div>Hello, {props.name}. world!</div>;
+const Profile = (props) => {
+    const { name, age, love} = props.data;
+    return (
+        <dl>
+          <dt>Name</dt><dd>{name}</dd>
+          <dt>Age</dt><dd>{age}</dd>
+          <dt>Love</dt><dd>{love}</dd>
+        </dl>
+    );
 }
 
-export default Hello;
+export default Profile;;
